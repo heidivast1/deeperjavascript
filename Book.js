@@ -13,7 +13,7 @@ class Book {
 
         if (out) {
             const newDueDate = new Date();
-            newDueDate.setDate(newDueDate.getDate() + 14);
+            newDueDate.setDate(newDueDate.getDate() - 14);
             this.dueDate = newDueDate;
         } else {
             this.dueDate = null;
