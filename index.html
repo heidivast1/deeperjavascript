@@ -12,16 +12,22 @@
 
 <script>
   // our test code here
-  
+
 
   const  library = new Library();
   const book = new Book('Harry Potter and the Sorcerer\'s Stone', 'J.K. Rowling', '978-0439708180');
   const patron = new Patron('Heidi', 'heidi@loop.com');
-  
+
   library.addBook(book);
   library.addPatron(patron);
-  console.log(library);
-  
-  
-  
+
+  patron.checkOut(book);
+
+
+
+  console.log(patron);
+
+
+
+
 </script>
