@@ -12,7 +12,11 @@ class Game {
 
   createPlayers() {
     const players = [new Player('Player 1', 1, '#e15258', true),
-                    new Player('Player 2', 2, '#e59a13')];
+                     new Player('Player 2', 2, '#e59a13')];
     return players;
+  }
+/*below gets game ready for play*/
+  startGame(){
+
   }
 }
