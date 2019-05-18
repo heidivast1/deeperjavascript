@@ -4,4 +4,14 @@ class Token {
     this.id = `token-${index}-${owner.id}`;
     this.dropped = false;
   }
+
+  drawHTMLToken(){
+    const token = document.createElement("div");
+
+    document.getElementById('game-board-underlay').appendChild(token);
+
+    token.setAttribute('id', this.id); /*created a new div, then added it to an existing HTML element, adding an id, and a class to it, and a color*/
+    token.setAttribute('class', 'token');
+    token.style.backgroundColor = this.owner.color;
+  }
 }

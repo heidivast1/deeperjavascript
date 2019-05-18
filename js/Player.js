@@ -25,4 +25,13 @@ class Player {
     }
     return tokens;
   }
+
+  get unusedTokens(){
+    return this.tokens.filter(token => !token.dropped); /*any token object whose dropped prop doesn't equal true*/
+
+  }
+
+  get activeToken(){
+    return this.unusedTokens[0];
+  }
 }
