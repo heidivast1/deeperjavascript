@@ -12,7 +12,7 @@ class Board {
  */
 
 
- createSpaces(){
+ createSpaces() {
      const spaces = [];
 
      for (let x = 0; x < this.columns; x++){
@@ -29,10 +29,10 @@ class Board {
      return spaces;
    }
 
-   drawHTMLBoard(){
-     for (let column of this.spaces){ /*this iteratess over each array which is each column*/
-        for (let space of column){ /*this iterates and gives us access to each space*/
-       space.drawSVGSpace();
+   drawHTMLBoard() {
+     for (let column of this.spaces) { /*this iteratess over each array which is each column*/
+        for (let space of column) { /*this iterates and gives us access to each space*/
+            space.drawSVGSpace();
        }
      }
    }

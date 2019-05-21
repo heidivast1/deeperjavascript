@@ -25,7 +25,7 @@ class Game {
    */
   startGame(){
     this.board.drawHTMLBoard();
-    this.activePlayer.activeToken.drawHTMLBoard();
+    this.activePlayer.activeToken.drawHTMLToken();
     this.ready = true;
   }
 }
